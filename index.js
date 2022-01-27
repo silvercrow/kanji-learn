@@ -6,4 +6,4 @@ app.use((ctx) => {
   ctx.response.body = "Hello David!";
 });
 
-await app.listen({ port: 8000 });
+addEventListener("fetch", app.fetchEventHandler());
